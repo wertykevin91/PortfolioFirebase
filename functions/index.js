@@ -1,20 +1,28 @@
 const functions = require('firebase-functions');
 const express = require('express');
+const engines = require('consolidate');
+
+// get apps
 
 const app = express();
 
-app.get("/timestamp", (request, response)=>{
+app.engine('pug', engines.pug);
+app.set('views', './views');
+app.set('view engine', 'pug');
 
-    response.send(`${Date.now()}`);
-});
+// routes
+var home = require('./routes/index');
 
-app.get("/timestamp-cached", (request, response)=>{
-    response.set('Cache-Control', 'public, max-age=300, s-maxage=600');
-    response.send(`${Date.now()}`);
-});
+// app.get("/timestamp", (request, response)=>{
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
+//     response.send(`${Date.now()}`);
+// });
 
+// app.get("/timestamp-cached", (request, response)=>{
+//     response.set('Cache-Control', 'public, max-age=300, s-maxage=600');
+//     response.send(`${Date.now()}`);
+// });
+app.use('/', home);
+
+// export app
 exports.app = functions.https.onRequest(app);

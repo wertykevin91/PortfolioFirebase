@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    div(class='container')
+        h1= title
+        p Welcome to #{title}
+        ul 
+            each val in values
+                li= `${val.FullName} ${val.ContactNo} ${val.State} ${val.Country} ${val.Affiliation}`  
+            else
+                li there are no values
+    //script(src="/javascripts/app/index.js")
