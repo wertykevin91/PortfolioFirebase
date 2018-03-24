@@ -4,16 +4,59 @@ html
     title= title
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name='description' content='Kevin Wong Portfolio')
+    meta(name='author' content='Kevin Wong')
     
-    link(rel='stylesheet', href='/stylesheets/style.css')
     script(
-        src="http://code.jquery.com/jquery-3.3.1.min.js"
-		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-		crossorigin="anonymous"
+        src="//code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"
     )
-    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    //- link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+    //- script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.min.css')
+    script(src='/scripts/vendor/bootstrap/bootstrap.bundle.min.js')
+
+    link(
+      href="stylesheets/font-awesome/css/font-awesome.min.css" 
+      rel="stylesheet" 
+      type="text/css"
+    )
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,700", type='text/css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", type='text/css')
+
+    link(rel="stylesheet", href="/stylesheets/magnific-popup/magnific-popup.css", type='text/css')
+    script(src="/scripts/vendor/magnific-popup/jquery.magnific-popup.js")
+
+    script(src='/scripts/vendor/jquery-easing/jquery.easing.min.js')
+
+    //- Note that css files are executed in order. so load css files from least important to most important.
+
+    link(rel='stylesheet', href='/stylesheets/freelancer.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
 
     //link(rel="shortcut icon" runat="server" href="/favicon.ico")
-  body
+  body(id='page-top')
+    nav(class='navbar navbar-expand-lg bg-secondary fixed-top text-uppercase', id='mainNav')
+      div(class='container')
+        a(class='navbar-brand js-scroll-trigger', href="#page-top")= title
+        button(
+          type='button' 
+          class='navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded' 
+          data-toggle="collapse" 
+          data-target="#navbarResponsive" 
+          aria-controls="navbarResponsive" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        ) Menu
+          i(class='fa fa-bars')
+        div(class='collapse navbar-collapse', id='navbarResponsive')
+          ul(class='navbar-nav ml-auto')
+            li(class='nav-item mx-0 mx-lg-1')
+              a(href="#portfolio", class='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger') Portfolio
+            li(class='nav-item mx-0 mx-lg-1')
+              a(href="#about", class='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger') About
+            li(class='nav-item mx-0 mx-lg-1')
+              a(href="#contact", class='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger') Contact
 block content

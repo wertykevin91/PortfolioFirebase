@@ -1,0 +1,50 @@
+[debug] [2018-03-24T18:19:39.951Z] ----------------------------------------------------------------------
+[debug] [2018-03-24T18:19:39.952Z] Command:       /usr/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2018-03-24T18:19:39.952Z] CLI Version:   3.17.4
+[debug] [2018-03-24T18:19:39.952Z] Platform:      linux
+[debug] [2018-03-24T18:19:39.952Z] Node Version:  v8.9.4
+[debug] [2018-03-24T18:19:39.953Z] Time:          Sun Mar 25 2018 02:19:39 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:39.953Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-24T18:19:39.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-24T18:19:39.959Z] > authorizing via signed-in user
+[debug] [2018-03-24T18:19:39.961Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/kevin-portfolio-node  
+  
+ Sun Mar 25 2018 02:19:39 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:41.000Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-24T18:19:41.000Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/kevin-portfolio-node/tokens  
+  
+ Sun Mar 25 2018 02:19:41 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:41.924Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/wertykevin91/Documents/workspace/PortfolioFirebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-03-24T18:19:42.070Z] Fetching environment
+[debug] [2018-03-24T18:19:42.071Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/kevin-portfolio-node  
+  
+ Sun Mar 25 2018 02:19:42 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:42.071Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/kevin-portfolio-node/apiKeys  
+  
+ Sun Mar 25 2018 02:19:42 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:42.071Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/kevin-portfolio-node  
+  
+ Sun Mar 25 2018 02:19:42 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:43.235Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-24T18:19:43.236Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/130194385216/clients/_:getWebAppConfig  
+  
+ Sun Mar 25 2018 02:19:43 GMT+0800 (MYT)
+[debug] [2018-03-24T18:19:43.361Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-24T18:19:43.388Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-24T18:19:43.389Z] Starting @google-cloud/functions-emulator
+[debug] [2018-03-24T18:19:43.893Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-24T18:19:43.908Z] Parsing function triggers
+[info] ✔  functions: app: http://localhost:5001/kevin-portfolio-node/us-central1/app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
+[info] [hosting] Rewriting / to local function app
