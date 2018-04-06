@@ -1,3 +1,7 @@
 #test-style{
     margin: 0em;
 }
+
+.image-width-100{
+    max-width: 100%
+}
