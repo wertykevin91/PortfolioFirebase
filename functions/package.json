@@ -13,7 +13,7 @@
     "node": "8"
   },
   "dependencies": {
-    "acorn": "^6.0.0",
+    "acorn": "^6.4.1",
     "consolidate": "^0.15.1",
     "express": "^4.16.4",
     "firebase-admin": "^8.9.2",
