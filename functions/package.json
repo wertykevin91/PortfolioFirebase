@@ -15,7 +15,7 @@
   "dependencies": {
     "acorn": "^6.0.0",
     "consolidate": "^0.15.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "firebase-admin": "^8.9.2",
     "firebase-functions": "^3.3.0",
     "pug": "^2.0.3"
